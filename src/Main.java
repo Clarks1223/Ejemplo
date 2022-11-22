@@ -1,9 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Lista de autos de la familia");
-        Coches uchuari= new Coches();
-        uchuari.autoMafer();
-        System.out.println();
-        uchuari.autoPablo();
+        Metodos m1= new Metodos();
+        m1.llenarDatos();
+        m1.mostDatos();
+        if (m1.mayorEdad()==true){
+            System.out.println("Es mayor de edad");
+        }
+        else{
+            System.out.println("Es menor de edad");
+        }
     }
 }
